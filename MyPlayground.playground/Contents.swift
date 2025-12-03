@@ -1,11 +1,14 @@
-let count: UInt = 15
+let count: UInt = 156
 let apples: String
 
-if count == 1  {
-    apples = "яблоко"
-} else if count == 15 {
+let lastTwo = count % 100
+let lastOne = count % 10
+
+if lastTwo >= 11 && lastTwo <= 14 {
     apples = "яблок"
-} else if count == 154 {
+} else if lastOne == 1 {
+    apples = "яблоко"
+} else if lastOne >= 2 && lastOne <= 4 {
     apples = "яблока"
 } else {
     apples = "яблок"
